@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<header>
+    <meta charset="UTF-8">
+    <style>
+        .h1 { 
+            color: rgb(20, 95, 42);
+            margin-top:3em;
+            margin-left:40em;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight:bold;
+            font-size:30pt;
+        }
+    </style>
+    <!--Title of game-->
+    <h1>
+    <div class="h1"> ROCK PAPER SCISSORS GAME</div>
+    <meta charset="UTF-8"/>
+    </h1>
+</header>
+<body>
+    <style>
+        .welcome {
+            margin-left:65em;
+            color: blue;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:20pt;
+        }
+        .move {
+            margin-left:68em;
+            color: rgb(165, 13, 107);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            font-size:20pt;
+        }
+        .options {
+            margin-left:0em;
+            display:flex;
+            justify-content:center;
+            color: rgb(71, 10, 10);
+            font-size:14pt;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color:none;
+            transition:0.3s ease;
+            cursor:pointer;
+        }
+        .option {
+            margin-left:0em;
+            display:flex;
+            justify-content:center;
+            color: rgb(107, 5, 5);
+            transition:0.3s ease;
+            cursor:pointer;
+        }
+        
+        .play {
+            margin-top:2em;
+            margin-left:43em;
+            color: rgb(255,255,255);
+            font-size:16pt;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color:rgb(202, 191, 38);
+        }
+        .scoreboard {
+            justify-content: center;
+            grid-template-columns: repeat(2,4fr);
+            border: 2px solid black;
+            text-align:center;
+            width:200px;
+            background-color:rgb(0, 119, 128);
+            color:white;
+            position:relative;
+            margin-left: 65em;
+            margin-top:2em;
+            padding: 15px 15px;
+            font-size:20pt;
+            
+        }
+        #player-label {
+            Color:rgb(255, 255, 255);
+            background-color:rgb(107, 14, 101);
+            font-size:14pt;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 2px 10px;
+            position: absolute;
+            top:15px;
+            left:-25px;
+        }
+        #computer-label {
+            Color:rgb(255, 255, 255);
+            background-color:rgb(107, 14, 101);
+            font-size:14pt;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            padding: 2px 10px;
+            position: absolute;
+            top:15px;
+            right:-25px;
+        }
+        
+    </style>
+    <!--Welcome Player-->
+    <h2><div class="welcome"> WELCOME PLAYER!</div></h2>
+    <!--Player chooses object-->
+    <h3><div class="move">Your move:</div></h3>
+    <div class="options">
+        <button class="option" id="rock" value="0"><img src=rock.png></button>
+        <button class="option" id="paper" value="1"><img src=paper.png></button>
+        <button class="option" id="scissors" value="2"><img src=scissors.png></button>
+    </div>
+    
+    
+    
+<script src="app.js"> </script>
+    <div class="scoreboard">
+        <div id="player-label" class="tag">Player</div>
+        <div id="computer-label" class="tag">Computer</div>
+        <span id="playerScore">0</span> - <span id="computerScore">0</span>
+</div>
+
+
+</body>
+<footer>
+
+</footer>
+</html>
